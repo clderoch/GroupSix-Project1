@@ -1,0 +1,40 @@
+body {
+    background: url('../images/beer3.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron{
+    /* background: url('../images/clouds.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+}
+
+table{
+    color: white;
+    margin-top: 150px;
+    font-size: 18px;
+}
+
+nav{
+    margin-left: 1000px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav-item{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.input-group{
+    float: left;
+    margin-left: 300px;
+}
+
