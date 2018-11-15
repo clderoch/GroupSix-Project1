@@ -2,66 +2,71 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Favorite Movies</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
+    <header id="masthead">
+        <div class="container">
+            <nav>
+                <a class="nav-item" href="index.html">Home</a>
+                <a class="nav-item" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Brewery Heaven</h1>
+            <p class="lead">If you're looking for a place to find the best breweries in your area then look no further!
+                This website will help you locate the top breweries around you and we'll even help you locate the best
+                means of transportaion there via Uber or Lyft. It's as simple as putting in the zip code you're
+                currently in and the distance you're wanting to go.</p>
+        </div>
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="City,State">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mile Radius</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">5 Miles</a>
+                <a class="dropdown-item" href="#">10 Miles</a>
+                <a class="dropdown-item" href="#">15 Miles</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">No Limit</a>
+            </div>
+        </div>
+    </div>
     <h1>Brewery Search</h1>
-
-    <!-- This form will be where users input data about the brewery-->
+    <!-- Brewery Select Box -->
     <form id="brewery-form">
-      <label for="brewery-input">Search for a Brewery by City</label>
-      <input type="text" id="brewery-input"><br>
 
-      <!-- This button will trigger our AJAX call -->
-      <input id="find-brewery" type="submit" value="Brewery Search">
-    </form>
+        <!-- Label for Text Box -->
+        <label for="brewery-input">Choose Your City</label>
 
-    <!-- We'll be dumping our JSON contents in here -->
-      <div id="brewery-view1"></div>
-      <div id="brewery-view2"></div>
-      <div id="brewery-view3"></div>
-      <div id="brewery-view4"></div>
-      <div id="brewery-view5"></div>
-      <div id="brewery-view6"></div>
+        <!-- Text Input Box -->
+        <input type="text" id="brewery-input"><br>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      // This .on("click") function will trigger the AJAX Call
-      $("#find-brewery").on("click", function(event) {
-        // event.preventDefault() can be used to prevent an event's default behavior.
-        // Here, it prevents the submit button from trying to submit a form when clicked
-        event.preventDefault();
-        // Here we grab the text from the input box
-        var brew_search = $("#brewery-input").val();
-        // Here we construct our URL
-        var queryURL = "https://api.openbrewerydb.org/breweries?by_city=" + brew_search + "&sort=-postal_code";
-        // Write code between the dashes below to hit the queryURL with $ajax, then take the response data
-        // and display it in the div with an id of movie-view
-        // ------YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY EDIT THE HTML ABOVE.
-        $.ajax({
-          url: queryURL,
-          method: "GET"
-        }).then(function(response) {
-          $("#brewery-view1").append("<li>" + response[0].name  + "<ol>" + response[0].street + " " + response[0].postal_code +  "<ol>" + response[0].website_url + "<ol>" + "Phone:" + response[0].phone);
-            
-          $("#brewery-view2").append("<li>" + response[1].name  + "<ol>" + response[1].street + " " + response[1].postal_code +  "<ol>" + response[1].website_url + "<ol>" + "Phone:" + response[1].phone);
-            
-          $("#brewery-view3").append("<li>" + response[2].name  + "<ol>" + response[2].street + " " + response[2].postal_code +  "<ol>" + response[2].website_url + "<ol>" + "Phone:" + response[2].phone);
-          
-          $("#brewery-view4").append("<li>" + response[3].name  + "<ol>" + response[3].street + " " + response[3].postal_code +  "<ol>" + response[3].website_url + "<ol>" + "Phone:" + response[3].phone);
-          
-          $("#brewery-view5").append("<li>" + response[4].name  + "<ol>" + response[4].street + " " + response[4].postal_code +  "<ol>" + response[4].website_url + "<ol>" + "Phone:" + response[4].phone);
- 
-          
-        });
-    
-});
-    </script>
-  </div>
+        <!-- Submit Button -->
+        <input class="btn btn-success"id="select-brewery" type="submit" value="Find Brewery!">
+        
+        <a class="btn btn-primary" target="_blank" href="https://lyft.com/ride?id=lyft&pickup[latitude]=37.764728&pickup[longitude]=-122.422999&partner=vxUWN3naZ4cE4PZ61hmoM2M2XcH6nrU6TeO8ClmVdv5TPVJODUn0YpJR98DLqojmIunQueZUyu0mu6TzaLyf1qNVyWpzJUfJUmqj6WYHh4RTQwlbwmLsmo8="  role="button">Contact Lyft</a>
+
+    <!-- Brewery Information -->
+    <div id="brewery-div"></div>
+
 </body>
+
+    <!--  JQuery  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<script src="assets/script.js" type="text/javascript" charset="utf-8"></script>
 
 </html>
