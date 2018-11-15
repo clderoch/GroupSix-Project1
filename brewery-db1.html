@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Brewery Search</h1>
+
+    <!-- This form will be where users input data about the brewery-->
+    <form id="brewery-form">
+      <label for="brewery-input">Search for a Brewery by City</label>
+      <input type="text" id="brewery-input"><br>
+
+      <!-- This button will trigger our AJAX call -->
+      <input id="find-brewery" type="submit" value="Brewery Search">
+    </form>
+
+    <!-- We'll be dumping our JSON contents in here -->
+      <div id="brewery-view1"></div>
+      <div id="brewery-view2"></div>
+      <div id="brewery-view3"></div>
+      <div id="brewery-view4"></div>
+      <div id="brewery-view5"></div>
+      <div id="brewery-view6"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      // This .on("click") function will trigger the AJAX Call
+      $("#find-brewery").on("click", function(event) {
+        // event.preventDefault() can be used to prevent an event's default behavior.
+        // Here, it prevents the submit button from trying to submit a form when clicked
+        event.preventDefault();
+        // Here we grab the text from the input box
+        var brew_search = $("#brewery-input").val();
+        // Here we construct our URL
+        var queryURL = "https://api.openbrewerydb.org/breweries?by_city=" + brew_search;
+        // Write code between the dashes below to hit the queryURL with $ajax, then take the response data
+        // and display it in the div with an id of movie-view
+        // ------YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY EDIT THE HTML ABOVE.
+        $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).then(function(response) {
+          $("#brewery-view1").html("<h4>" + response[0].name + "</h4>");
+          $("#brewery-view2").text(response[0].street);
+          
+          $("#brewery-view3").html("<h4>" + response[1].name + "</h4>");
+          $("#brewery-view4").text(response[1].street);
+          
+          $("#brewery-view5").html("<h4>" + response[2].name + "</h4>");
+          $("#brewery-view6").text(response[2].street);
+          
+
+        });
+    
+});
+    </script>
+  </div>
+</body>
+
+</html>
