@@ -38,7 +38,7 @@
         // Here we grab the text from the input box
         var brew_search = $("#brewery-input").val();
         // Here we construct our URL
-        var queryURL = "https://api.openbrewerydb.org/breweries?by_city=" + brew_search;
+        var queryURL = "https://api.openbrewerydb.org/breweries?by_city=" + brew_search + "&sort=-postal_code";
         // Write code between the dashes below to hit the queryURL with $ajax, then take the response data
         // and display it in the div with an id of movie-view
         // ------YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY EDIT THE HTML ABOVE.
@@ -46,16 +46,17 @@
           url: queryURL,
           method: "GET"
         }).then(function(response) {
-          $("#brewery-view1").html("<h4>" + response[0].name + "</h4>");
-          $("#brewery-view2").text(response[0].street);
+          $("#brewery-view1").append("<li>" + response[0].name  + "<ol>" + response[0].street + " " + response[0].postal_code +  "<ol>" + response[0].website_url + "<ol>" + "Phone:" + response[0].phone);
+            
+          $("#brewery-view2").append("<li>" + response[1].name  + "<ol>" + response[1].street + " " + response[1].postal_code +  "<ol>" + response[1].website_url + "<ol>" + "Phone:" + response[1].phone);
+            
+          $("#brewery-view3").append("<li>" + response[2].name  + "<ol>" + response[2].street + " " + response[2].postal_code +  "<ol>" + response[2].website_url + "<ol>" + "Phone:" + response[2].phone);
           
-          $("#brewery-view3").html("<h4>" + response[1].name + "</h4>");
-          $("#brewery-view4").text(response[1].street);
+          $("#brewery-view4").append("<li>" + response[3].name  + "<ol>" + response[3].street + " " + response[3].postal_code +  "<ol>" + response[3].website_url + "<ol>" + "Phone:" + response[3].phone);
           
-          $("#brewery-view5").html("<h4>" + response[2].name + "</h4>");
-          $("#brewery-view6").text(response[2].street);
+          $("#brewery-view5").append("<li>" + response[4].name  + "<ol>" + response[4].street + " " + response[4].postal_code +  "<ol>" + response[4].website_url + "<ol>" + "Phone:" + response[4].phone);
+ 
           
-
         });
     
 });
