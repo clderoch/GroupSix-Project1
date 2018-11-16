@@ -8,6 +8,14 @@ function searchBreweryFinder(brewery) {
       // Printing the entire object to console
       console.log(response);
       // Constructing HTML containing the artist information
+
+      for (i=0; i<5; i++) {
+      var breweryName = $("<h1>").text(response[i].name );
+      var breweryURL = $("<a>").attr("href", response[i].website_url).append(breweryName[i]);
+      var breweryAddress =$("<h3>").text( response[i].street + " || " + response[i].postal_code + " || " + response[i].brewery_type)
+      }
+     });
+     
       var breweryName1 = $("<h1>").text(response[0].name );
       var breweryURL1 = $("<a>").attr("href", response[0].website_url).append(breweryName1);
       var breweryAddress1 =$("<h3>").text( response[0].street + " || " + response[0].postal_code + " || " + response[0].brewery_type)
