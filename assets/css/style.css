@@ -23,18 +23,30 @@ table{
 }
 
 nav{
-    margin-left: 1000px;
+    float: right;
     margin-top: 5px;
     margin-bottom: 5px;
+    align-content: center;
 }
 
 .nav-item{
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 36px;
+    color: saddlebrown;
+    font-family: Futura;
+    text-decoration: underline;
 }
+
 
 .input-group{
     float: left;
     margin-left: 300px;
 }
 
+#brewery-div {
+    background-color: rgba(253,245,230,0.8);
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}

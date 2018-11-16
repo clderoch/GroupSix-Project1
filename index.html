@@ -15,21 +15,26 @@
 
 <body>
     <header id="masthead">
-        <div class="container">
-            <nav>
-                <a class="nav-item" href="index.html">Home</a>
-                <a class="nav-item" href="contact.html">Contact</a>
-            </nav>
+        <div class="container" style="height: 100px; width: 100%; background-color:rgba(253,245,230,0.8); color:rgba(139,69,19,0.9); align-content: center;">
+            <div class="col-12">
+                <nav>
+                    <a class="nav-item" href="index.html">Home</a>
+                    <a class="nav-item" href="contact.html">Contact</a>
+                </nav>
+            </div>
         </div>
     </header>
-    <div class="jumbotron jumbotron-fluid">
+    <br>
+    <br>
+    <div class="jumbotron jumbotron-fluid" style="background-color:rgba(253,245,230,0.8); color:rgba(139,69,19,0.9)">
         <div class="container">
-            <h1 class="display-4">Brewery Heaven</h1>
-            <p class="lead">If you're looking for a place to find the best breweries in your area then look no further!
+            <h1 class="display-4" style="text-align: center; font-family: Gilroy; font-weight: bolder;">Brewery Heaven</h1>
+            <p class="lead" style="text-align: center; font-family: Futura;">If you're looking for a place to find the best breweries in your area then look no further!
                 This website will help you locate the top breweries around you and we'll even help you locate the best
                 means of transportaion there via Uber or Lyft. It's as simple as putting in the zip code you're
                 currently in and the distance you're wanting to go.</p>
         </div>
+    </div>
 <!--
     </div>
     <div class="input-group">
@@ -46,21 +51,32 @@
         </div>
     </div>
 -->
-    <h1>Brewery Search</h1>
-    <!-- Brewery Select Box -->
-    <form id="brewery-form">
 
-        <!-- Label for Text Box -->
-        <label for="brewery-input">Choose Your City</label>
-
-        <!-- Text Input Box -->
-        <input type="text" id="brewery-input"><br>
-
-        <!-- Submit Button -->
-        <input class="btn btn-success"id="select-brewery" type="submit" value="Find Brewery!">
+<div class="container" style="background-color:rgba(253,245,230,0.8); padding-bottom: 25px; width: 50%;">
+    <div class="row">
+        <div class="col-4" style="text-align: center; font-family: Futura; color:rgba(139,69,19,0.9);">
+            <h1 style="font-size: 40px; font-weight:bolder;">Brewery Search</h1>
+            <br>
+            <!-- Brewery Select Box -->
+            <form id="brewery-form"  style="text-align: center">
         
-        <a class="btn btn-primary" target="_blank" href="https://lyft.com/ride?id=lyft&pickup[latitude]=37.764728&pickup[longitude]=-122.422999&partner=vxUWN3naZ4cE4PZ61hmoM2M2XcH6nrU6TeO8ClmVdv5TPVJODUn0YpJR98DLqojmIunQueZUyu0mu6TzaLyf1qNVyWpzJUfJUmqj6WYHh4RTQwlbwmLsmo8="  role="button">Contact Lyft</a>
-
+                <!-- Label for Text Box -->
+                <div class="label" style="font-family: Gilroy; color:rgba(139,69,19,0.9); font-size: 24px; padding: 10px;">
+                     <label for="brewery-input">Choose Your City</label>
+                </div>
+               
+                <!-- Text Input Box -->
+                <input type="text" id="brewery-input"><br>
+                <br>
+                <!-- Submit Button -->
+                <input class="btn btn-success"id="select-brewery" type="submit" value="Find Brewery!">
+                
+                <a class="btn btn-primary" target="_blank" href="https://lyft.com/ride?id=lyft&pickup[latitude]=37.764728&pickup[longitude]=-122.422999&partner=vxUWN3naZ4cE4PZ61hmoM2M2XcH6nrU6TeO8ClmVdv5TPVJODUn0YpJR98DLqojmIunQueZUyu0mu6TzaLyf1qNVyWpzJUfJUmqj6WYHh4RTQwlbwmLsmo8="  role="button" >Contact Lyft</a>
+        </div>
+    </div>
+</div>
+   
+    
     <!-- Brewery Information -->
     <div id="brewery-div"></div>
 
