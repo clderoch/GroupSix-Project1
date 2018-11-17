@@ -34,7 +34,8 @@ nav{
     font-size: 36px;
     color: saddlebrown;
     font-family: Futura;
-    text-decoration: underline;
+    float: right;
+    padding-right: 15px;
 }
 
 
