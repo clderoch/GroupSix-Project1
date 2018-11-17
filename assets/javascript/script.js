@@ -1,3 +1,6 @@
+var clickSound = new Audio("./assets/sounds/beer.wav");
+var clickSound1 = new Audio("./assets/sounds/siren.wav");
+
 function searchBreweryFinder(brewery) {
 
   var queryURL = "https://api.openbrewerydb.org/breweries?by_city=" + brewery + "&sort=-postal_code";;
@@ -37,7 +40,12 @@ function searchBreweryFinder(brewery) {
 }
 
 $("#select-brewery").on("click", function (event) {
+  soundClick.play();
   event.preventDefault();
   var inputBrewery = $("#brewery-input").val().trim();
   searchBreweryFinder(inputBrewery);
+});
+
+$("lyft-web-button-parent").on("click", function (event) {
+  soundClick1.play();
 });
