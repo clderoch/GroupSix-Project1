@@ -3,100 +3,65 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <title>Document</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href= "assets/images/favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<meta charset="utf-8">
+	<title>Brewery Heaven</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
 </head>
 
 <body>
-    <header id="masthead">
-        <div class="container" style="height: 100px; width: 100%; background-color:rgba(253,245,230,0.8); color:rgba(139,69,19,0.9); align-content: center;">
-            <div class="col-12">
-                <nav>
-                    <a class="nav-item" href="index.html">Home</a>
-                    <a class="nav-item" href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <br>
-    <br>
-    <div class="jumbotron jumbotron-fluid" style="background-color:rgba(253,245,230,0.8); color:rgba(139,69,19,0.9)">
-        <div class="container">
-            <h1 class="display-4" style="text-align: center; font-family: Gilroy; font-weight: bolder;">Brewery Heaven</h1>
-            <p class="lead" style="text-align: center; font-family: Futura;">If you're looking for a place to find the best breweries in your area then look no further!
-                This website will help you locate the top breweries around you and we'll even help you locate the best
-                means of transportaion there via Uber or Lyft. It's as simple as putting in the zip code you're
-                currently in and the distance you're wanting to go.</p>
-        </div>
-    </div>
-<!--
-    </div>
-    <div class="input-group">
-        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="City,State">
-        <div class="input-group-append">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mile Radius</button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">5 Miles</a>
-                <a class="dropdown-item" href="#">10 Miles</a>
-                <a class="dropdown-item" href="#">15 Miles</a>
-                <div role="separator" class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">No Limit</a>
-            </div>
-        </div>
-    </div>
--->
+	<header id="masthead">
+		<div class="container" style="height: 100px; width: 100%; background-color:rgba(253,245,230,0.8); color:rgba(139,69,19,0.9); align-content: center;">
+			<div class="col-12">
+				<nav>
+					<a class="nav-item" href="index.html">Home</a>
+					<a class="nav-item" href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<br>
+	<br>
+	<div class="jumbotron jumbotron-fluid" style="background-color:rgba(253,245,230,0.8); color:rgba(139,69,19,0.9)">
+		<div class="container">
+			<h1 class="display-4" style="text-align: center; font-family: Gilroy; font-weight: bolder;">Brewery Heaven</h1>
+			<p class="lead" style="text-align: center; font-family: Futura;">If you're looking for a place to find the
+				best breweries in your area then look no further!
+				This website will help you locate the top breweries around you and we'll even help you locate the best
+				means of transportaion there via Uber or Lyft. It's as simple as putting in the zip code you're
+				currently in and the distance you're wanting to go.</p>
+		</div>
+	</div>
 
-    <h1>Brewery Search</h1>
-    <!-- Brewery Select Box -->
-    <form id="brewery-form">
+	<form id="brewery-form">
+		<div class="container" style="background-color:rgba(253,245,230,0.8); padding-bottom: 25px; width: 50%;">
+			<div class="row">
+				<div class="col-4" style="text-align: center; font-family: Futura; color:rgba(139,69,19,0.9);">
+					<h1 style="font-size: 40px; font-weight:bolder;">Brewery Search</h1>
+					<br>
+					<form id="brewery-form" style="text-align: center">
+						<div class="label" style="font-family: Gilroy; color:rgba(139,69,19,0.9); font-size: 24px; padding: 10px;">
+							<label for="brewery-input">Choose Your City</label>
+						</div>
+						<input type="text" id="brewery-input"><br>
+						<br>
+						<input class="btn btn-success" id="select-brewery" type="submit" value="Find Brewery!">
+						<a class="btn btn-primary" target="_blank" href="https://lyft.com/ride?id=lyft&pickup[latitude]=37.764728&pickup[longitude]=-122.422999&partner=vxUWN3naZ4cE4PZ61hmoM2M2XcH6nrU6TeO8ClmVdv5TPVJODUn0YpJR98DLqojmIunQueZUyu0mu6TzaLyf1qNVyWpzJUfJUmqj6WYHh4RTQwlbwmLsmo8="
+						 role="button">Contact Lyft</a>
+				</div>
+			</div>
+		</div>
 
-        <!-- Label for Text Box -->
-        <label for="brewery-input">Choose Your City</label>
+		<div id="brewerys"></div>
 
-        <!-- Text Input Box -->
-        <input type="text" id="brewery-input" style="color: black"><br>
-
-
-<div class="container" style="background-color:rgba(253,245,230,0.8); padding-bottom: 25px; width: 50%;">
-    <div class="row">
-        <div class="col-4" style="text-align: center; font-family: Futura; color:rgba(139,69,19,0.9);">
-            <h1 style="font-size: 40px; font-weight:bolder;">Brewery Search</h1>
-            <br>
-            <!-- Brewery Select Box -->
-            <form id="brewery-form"  style="text-align: center">
-        
-                <!-- Label for Text Box -->
-                <div class="label" style="font-family: Gilroy; color:rgba(139,69,19,0.9); font-size: 24px; padding: 10px;">
-                     <label for="brewery-input">Choose Your City</label>
-                </div>
-               
-                <!-- Text Input Box -->
-                <input type="text" id="brewery-input"><br>
-                <br>
-                <!-- Submit Button -->
-                <input class="btn btn-success"id="select-brewery" type="submit" value="Find Brewery!">
-                
-                <a class="btn btn-primary" target="_blank" href="https://lyft.com/ride?id=lyft&pickup[latitude]=37.764728&pickup[longitude]=-122.422999&partner=vxUWN3naZ4cE4PZ61hmoM2M2XcH6nrU6TeO8ClmVdv5TPVJODUn0YpJR98DLqojmIunQueZUyu0mu6TzaLyf1qNVyWpzJUfJUmqj6WYHh4RTQwlbwmLsmo8="  role="button" >Contact Lyft</a>
-        </div>
-    </div>
-</div>
-   
-    
-    <!-- Brewery Information -->
-    <div id="brewery-div"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="assets/script.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
-
-    <!--  JQuery  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-<script src="assets/script.js" type="text/javascript" charset="utf-8"></script>
 
 </html>
