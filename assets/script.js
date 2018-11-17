@@ -10,7 +10,7 @@ function searchBreweryFinder(brewery) {
     console.log(response)
     $("#brewerys").empty();
 
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 10; i++) {
       console.log(response[i]);
       var brewery = $("<div>");
 
