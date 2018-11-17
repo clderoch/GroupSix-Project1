@@ -6,30 +6,25 @@ body {
     background-size: cover;
 }
 
-.jumbotron{
-    /* background: url('../images/clouds.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
+.jumbotron {
     background-color: rgba(0,0,0,0.1);
     color: white;
 }
 
-table{
+table {
     color: white;
     margin-top: 150px;
     font-size: 18px;
 }
 
-nav{
+nav {
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
     align-content: center;
 }
 
-.nav-item{
+.nav-item {
     margin-left: 10px;
     font-size: 36px;
     color: saddlebrown;
@@ -37,14 +32,28 @@ nav{
     float: right;
     padding-right: 15px;
 }
-
+.contact .staff-img {
+    width: 230px;
+    height: 230px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+    display: table;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+  }
 
 .input-group{
     float: left;
     margin-left: 300px;
 }
 
-#brewery-div {
+#brewerys {
     background-color: rgba(253,245,230,0.8);
     margin-top: 30px;
     text-align: center;
@@ -52,3 +61,208 @@ nav{
     padding-top: 5px;
 }
 
+<<<<<<< HEAD
+=======
+.contact {
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.social li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+    
+.contact .social {
+    margin: 30px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+}
+
+/* medium styles */
+.lyft-web-button {
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #000000; /* white */
+  font-family: sans-serif;
+  background-color: #FFFFFF; /* black */
+  border: none;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+.lyft-web-button:hover {
+  background-color: #E6E6E6; /* reduce brightness by 10% */
+}
+.lyft-web-button > .lyft-logo {
+  display: inline-block;
+  width: 48px;
+  height: 35px;
+  margin-top: 4px;
+  vertical-align: middle;
+}
+.lyft-web-button > .lyft-logo > svg {
+  width: 48px; /* fix svg rendering for IE */
+  height: 35px; /* fix svg rendering for IE */
+}
+.lyft-web-button > .cta-eta {
+  display: inline-block;
+  margin-left: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+.lyft-web-button > .cta-eta > .cta {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+}
+.lyft-web-button > .cta-eta > .eta {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+}
+.lyft-web-button > .arrow-icon {
+  display: inline-block;
+  width: 18px;
+  height: 19px; /* add 1px to prevent clipping */
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.lyft-web-button > .arrow-icon > svg {
+  width: 18px; /* fix svg rendering for IE */
+  height: 19px; /* fix svg rendering for IE */
+}
+.lyft-web-button > .price-range {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* small styles */
+.lyft-web-button.small {
+  padding: 4px 8px;
+}
+.lyft-web-button.small > .lyft-logo {
+  width: 32px;
+  height: 23px;
+}
+.lyft-web-button.small > .lyft-logo > svg {
+  width: 32px; /* fix svg rendering for IE */
+  height: 23px; /* fix svg rendering for IE */
+}
+.lyft-web-button.small > .cta-eta {
+  margin-left: 8px;
+}
+.lyft-web-button.small > .cta-eta > .cta {
+  display: none;
+}
+.lyft-web-button.small > .cta-eta > .eta {
+  font-size: 20px;
+}
+.lyft-web-button.small > .arrow-icon {
+  display: none;
+}
+.lyft-web-button.small > .price-range {
+  display: none;
+}
+
+/* large styles */
+.lyft-web-button.large {
+  padding: 18px 20px;
+}
+.lyft-web-button.large > .lyft-logo {
+  width: 55px;
+  height: 40px;
+}
+.lyft-web-button.large > .lyft-logo > svg {
+  width: 55px; /* fix svg rendering for IE */
+  height: 40px; /* fix svg rendering for IE */
+}
+.lyft-web-button.large > .cta-eta {
+  margin-left: 20px;
+}
+.lyft-web-button.large > .cta-eta > .cta {
+  font-size: 30px;
+}
+.lyft-web-button.large > .cta-eta > .eta {
+  font-size: 20px;
+}
+.lyft-web-button.large > .arrow-icon {
+  margin-left: 20px;
+}
+.lyft-web-button.large > .price-range {
+  font-size: 20px;
+}
+
+/* hot-pink */
+.lyft-web-button.hot-pink {
+  color: #FFFFFF; /* white */
+  background-color: #FF00BF; /* pink */
+}
+.lyft-web-button.hot-pink:hover {
+  background-color: #E600AC; /* reduce brightness by 10% */
+}
+.lyft-web-button.hot-pink > .lyft-logo > svg > path {
+  fill: #FFFFFF; /* white */
+}
+.lyft-web-button.hot-pink > .arrow-icon > svg > path {
+  fill: #FFFFFF; /* white */
+}
+
+/* mulberry-dark */
+.lyft-web-button.mulberry-dark {
+  color: #FFFFFF; /* white */
+  background-color: #352384; /* mulberry */
+}
+.lyft-web-button.mulberry-dark:hover {
+  background-color: #2B1C6B; /* reduce brightness by 10% */
+}
+.lyft-web-button.mulberry-dark > .lyft-logo > svg > path {
+  fill: #FFFFFF; /* white */
+}
+.lyft-web-button.mulberry-dark > .arrow-icon > svg > path {
+  fill: #FFFFFF; /* white */
+}
+
+/* mulberry-light */
+.lyft-web-button.mulberry-light {
+  color: #352384; /* mulberry */
+  background-color: #FFFFFF; /* white */
+}
+.lyft-web-button.mulberry-light:hover {
+  background-color: #E6E6E6; /* reduce brightness by 10% */
+}
+.lyft-web-button.mulberry-light > .lyft-logo > svg > path {
+  fill: #352384; /* mulberry */
+}
+.lyft-web-button.mulberry-light > .arrow-icon > svg > path {
+  fill: #352384; /* mulberry */
+}
+
+/* multicolor */
+.lyft-web-button.multicolor {
+  color: #000000; /* black */
+  background-color: #FFFFFF; /* white */
+}
+.lyft-web-button.multicolor:hover {
+  background-color: #E6E6E6; /* reduce brightness by 10% */
+}
+.lyft-web-button.multicolor > .lyft-logo > svg > path {
+  fill: #FF00BF; /* pink */
+}
+.lyft-web-button.multicolor > .arrow-icon > svg > path {
+  fill: #000000; /* white */
+}
+>>>>>>> master
