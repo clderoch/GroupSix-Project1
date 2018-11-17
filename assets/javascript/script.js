@@ -40,12 +40,12 @@ function searchBreweryFinder(brewery) {
 }
 
 $("#select-brewery").on("click", function (event) {
-  soundClick.play();
+  clickSound.play();
   event.preventDefault();
   var inputBrewery = $("#brewery-input").val().trim();
   searchBreweryFinder(inputBrewery);
 });
 
 $("lyft-web-button-parent").on("click", function (event) {
-  soundClick1.play();
+  clickSound1.play();
 });
