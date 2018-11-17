@@ -46,6 +46,6 @@ $("#select-brewery").on("click", function (event) {
   searchBreweryFinder(inputBrewery);
 });
 
-$("lyft-web-button-parent").on("click", function (event) {
+$("#lyft-web-button-parent").on("click", function (event) {
   clickSound1.play();
 });
