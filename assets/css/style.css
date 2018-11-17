@@ -6,30 +6,25 @@ body {
     background-size: cover;
 }
 
-.jumbotron{
-    /* background: url('../images/clouds.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
+.jumbotron {
     background-color: rgba(0,0,0,0.1);
     color: white;
 }
 
-table{
+table {
     color: white;
     margin-top: 150px;
     font-size: 18px;
 }
 
-nav{
+nav {
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
     align-content: center;
 }
 
-.nav-item{
+.nav-item {
     margin-left: 10px;
     font-size: 36px;
     color: saddlebrown;
@@ -43,7 +38,7 @@ nav{
     margin-left: 300px;
 }
 
-#brewery-div {
+#brewerys {
     background-color: rgba(253,245,230,0.8);
     margin-top: 30px;
     text-align: center;
