@@ -19,6 +19,7 @@ for (var i=0;i<vars.length;i++) {
     query_string[pair[0]].push(pair[1]);
     }
 } 
+
     return query_string;
 } ();
 
