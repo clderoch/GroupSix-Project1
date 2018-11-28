@@ -1,0 +1,61 @@
+html{
+    height: 100%;
+}
+body{
+    background: url('../images/beers.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 13pt;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    height: 100%
+}
+body a{
+    color: white;
+    text-decoration: none;
+}
+.main-wrapper{
+    margin: auto;
+    height: 50%;
+    display: table;
+    width: 50%;
+    background-color: orangered;
+    border: 3px solid orange;
+    text-align: center;
+    opacity: .9;
+    
+}
+.denied-wrapper { 
+    margin: auto;
+    height: 50%;
+    display: table;
+    width: 50%;
+    background-color: orangered;
+    border: 3px solid orange;
+    text-align: center;
+    opacity: .9;
+}
+.main-wrapper .wrapper-cell, .denied-wrapper .wrapper-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.main-wrapper .centerBlock, .denied-wrapper .centerBlock {
+    margin: 0 auto;
+}
+.question {
+    font-size: 23pt;
+    font-weight: bold;
+}
+
+.answer a {
+    color: white;
+    font-size: 23pt;
+    font-weight: bold;
+}
+
