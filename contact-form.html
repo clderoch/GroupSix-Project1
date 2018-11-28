@@ -1,39 +1,66 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>index.html</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+
+    <meta charset="utf-8">
+    <title>Brewery Heaven</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+     crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
 
 </head>
 
+<header id="masthead">
+    <div class="container" style="height: 100px; width: 100%; background-color:rgba(253,245,230,0.8); color:rgba(139,69,19,0.9); align-content: center;">
+      <div class="col-12">
+          <a class="navbar-brand" rel="home" href="index.html" style="font-size: 55px; font-family: Gilroy; font-weight:bolder; color:rgba(139,69,19,0.9); padding-top: 40px; padding-left:180px;">Brewery Heaven</a>
+        <nav>
+          <a class="nav-item" href="contact-form.html" style="font-weight: bolder; padding-top: 30px; padding-right: 180px;">Comments</a>
+            <a class="nav-item" href="contact.html" style="font-weight: bolder; padding-top: 30px;">Contact</a>
+          <a class="nav-item" href="index.html" style="font-weight: bolder; padding-top: 30px;">Home</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
 <body>
 
 <div id="main-right">
   <div class="cta">
-    <h3>Would you like more information?</h3>
-    <p>Please fill out the form below and one of the site managers will reach out to you shortly.</p>
-    <p>Thanks </p>
+    <h3 style="font-size:50px;">Would you like more information?</h3>
+    <p style="font-size:25px;">Please fill out the form below and one of the site managers will reach out to you shortly.</p>
+    <p style="font-size:25px;">Thanks </p>
   </div>
 <form action = "thankyou.php" method="post" name="form1" class="form">
   <div>
-    <label for="textfield2" class="label">Name:</label>
+    <label for="textfield2" class="label"style="font-size:15px;">Name:</label>
     <input name="U_NAME" type="text" class="textfield" required>
   </div>
+  <br>
+  <br>
   <div>
-    <label for="textfield3" class="label">Email:</label>
-    <input name="U_EMAIL" type="text" class="textfield required">
+    <label for="textfield3" class="label"style="font-size:15px;">Email:</label>
+    <input name="U_EMAIL" type="text" class="textfield" required>
+  </div>
+  <br>
+  <br>
   <div>
-    <label for="textfield4" class="label">Phone:</label>
-    <input name="PHONE" type="text" class="textfield required">
+    <label for="textfield4" class="label"style="font-size:15px;">Phone:</label>
+    <input name="PHONE" type="text" class="textfield" required>
    </div>
-   
+   <br>
+   <br>
    <div> 
-       <label for="textfield5" class="label">Comments:</label>
-       <textarea name="comment" type="text" class="textfield">Enter text here...</textarea></div>
+       <label for="textfield5" class="label"style="font-size:15px;">Comments:</label>
+       <textarea name="comment" type="text" class="textfield1">Enter text here...</textarea></div>
   <div>
-	  <label >I'm interested in: </label>
-	<select name="More_Info">
+    <br>
+    <br>
+	  <label style="font-size:15px;" >I'm interested in: </label>
+	<select style="background-color: rgb(128, 40, 40);" name="More_Info">
 		<option name="breweries" value="more_breweries">More Breweries</option>
 		<option name="beer" value="more_beer">A Certain Type of Beer</option>
 		<option name="hops" value="hops">Hops</option>
@@ -41,7 +68,8 @@
 	  </div>
    
 </div>
-    <input type="submit" name="button" id="button" value="Submit">
+<br>
+    <input style="background-color: rgb(128, 40, 40);color:white; width:100px; height: 30px;" type="submit" name="button" id="button" value="Submit">
 </form>
 </div>
 </main>

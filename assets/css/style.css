@@ -48,6 +48,20 @@ nav {
     border-radius: 50%;
   }
 
+#main-right{
+  color: white;
+}
+
+.textfield{
+height:30px;
+width: 250px;
+}
+
+.textfield1{
+  width: 300px;
+  height: 75px;
+}
+
 .input-group{
     float: left;
     margin-left: 300px;
