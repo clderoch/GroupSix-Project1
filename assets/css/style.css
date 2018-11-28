@@ -10,8 +10,11 @@ body {
     background-color: rgba(0,0,0,0.1);
     color: white;
 }
+
 #select-brewery {
   margin-bottom: 15px;
+  padding: 10px;
+  font-size: 22px;
 }
 
 table {
