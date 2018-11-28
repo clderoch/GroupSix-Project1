@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index.html</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="main-right">
+  <div class="cta">
+    <h3>Would you like more information?</h3>
+    <p>Please fill out the form below and one of the site managers will reach out to you shortly.</p>
+    <p>Thanks </p>
+  </div>
+<form action = "thankyou.php" method="post" name="form1" class="form">
+  <div>
+    <label for="textfield2" class="label">Name:</label>
+    <input name="U_NAME" type="text" class="textfield" required>
+  </div>
+  <div>
+    <label for="textfield3" class="label">Email:</label>
+    <input name="U_EMAIL" type="text" class="textfield required">
+  <div>
+    <label for="textfield4" class="label">Phone:</label>
+    <input name="PHONE" type="text" class="textfield required">
+   </div>
+   
+   <div> 
+       <label for="textfield5" class="label">Comments:</label>
+       <textarea name="comment" type="text" class="textfield">Enter text here...</textarea></div>
+  <div>
+	  <label >I'm interested in: </label>
+	<select name="More_Info">
+		<option name="breweries" value="more_breweries">More Breweries</option>
+		<option name="beer" value="more_beer">A Certain Type of Beer</option>
+		<option name="hops" value="hops">Hops</option>
+    </select>
+	  </div>
+   
+</div>
+    <input type="submit" name="button" id="button" value="Submit">
+</form>
+</div>
+</main>
+
+</body>
+</html>
