@@ -29,8 +29,7 @@ nav {
     font-size: 36px;
     color: saddlebrown;
     font-family: Futura;
-    float: right;
-    padding-right: 15px;
+    text-decoration: underline;
 }
 .contact .staff-img {
     width: 230px;
