@@ -47,46 +47,70 @@
     <p style="font-size:25px; font-family: 'Raleway', sans-serif; text-align: center;">Thanks! </p>
   </div>
 
- 
-<form action = "thankyou.php" method="post" name="form1" class="form">
-  <div>
-    <label for="textfield2" class="label"style="font-size:20px;">Name:</label>
-    <input name="U_NAME" type="text" class="textfield" required>
+<div class="container" style="background-color:rgba(253,245,230,0.8); padding: 10px; padding-left: 20px; border-radius: 25px;">
+  <div class="col-8">
+        <form action = "thankyou.php" method="post" name="form1" class="form">
+          <div>
+            <br>
+            <br>
+            <label for="textfield2" class="label"style="font-size:20px; color:rgba(139,69,19,0.9);">Name:</label>
+            <br>
+            <br>
+            <input name="U_NAME" type="text" class="textfield" style="width: 60%; "required>
+          </div>
+          <br>
+          <br>
+          <div>
+            <label for="textfield3" class="label"style="font-size:20px; color:rgba(139,69,19,0.9)">Email:</label>
+            <br>
+            <br>
+            <input name="U_EMAIL" type="text" class="textfield" style="width: 60%" required>
+          </div>
+          <br>
+          <br>
+          <div>
+            <label for="textfield4" class="label"style="font-size:20px; color:rgba(139,69,19,0.9)">Phone:</label>
+            <br>
+            <br>
+            <input name="PHONE" type="text" class="textfield" style="width: 60%" required>
+          </div>
+          <br>
+          <br>
+          <div> 
+              <label for="textfield5" class="label"style="font-size:20px; color:rgba(139,69,19,0.9)">Comments:</label>
+              <br>
+              <br>
+              <textarea name="comment" type="text" class="textfield1" style="width: 60%">Enter text here...</textarea></div>
+          <div>
+            <br>
+            <br>
+            <label style="font-size:20px; color:rgba(139,69,19,0.9)" >I'm interested in: </label>
+          <select style="background-color:rgba(139,69,19);" name="More_Info">
+            <option name="breweries" value="more_breweries">More Breweries</option>
+            <option name="beer" value="more_beer">A Certain Type of Beer</option>
+            <option name="hops" value="hops">Hops</option>
+            </select>
+            </div>
+          
+        <br>
+            <input style="background-color:rgba(139,69,19,0.9);color:white; width:100px; height: 30px;" type="submit" name="button" id="button" value="Submit">
+            <br>
+            <br>
+        </form>
+      </div>
   </div>
-  <br>
-  <br>
-  <div>
-    <label for="textfield3" class="label"style="font-size:20px;">Email:</label>
-    <input name="U_EMAIL" type="text" class="textfield" required>
-  </div>
-  <br>
-  <br>
-  <div>
-    <label for="textfield4" class="label"style="font-size:20px;">Phone:</label>
-    <input name="PHONE" type="text" class="textfield" required>
-  </div>
-   <br>
-   <br>
-   <div> 
-      <label for="textfield5" class="label"style="font-size:20px;">Comments:</label>
-      <textarea name="comment" type="text" class="textfield1">Enter text here...</textarea></div>
-  <div>
-    <br>
-    <br>
-	  <label style="font-size:20px;" >I'm interested in: </label>
-	<select style="background-color: rgb(128, 40, 40);" name="More_Info">
-		<option name="breweries" value="more_breweries">More Breweries</option>
-		<option name="beer" value="more_beer">A Certain Type of Beer</option>
-		<option name="hops" value="hops">Hops</option>
-    </select>
-	  </div>
-   
-</div>
-<br>
-    <input style="background-color: rgb(128, 40, 40);color:white; width:100px; height: 30px;" type="submit" name="button" id="button" value="Submit">
-</form>
 </div>
 </main>
+<br>
+<br>
+<footer class="page-footer font-small green">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="background-color:rgba(253,245,230,0.8);">© 2018 Copyright:
+      <a href="https:breweryheaven.com/index.html" style="color:rgba(139,69,19,0.9)"> BreweryHeaven.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
 
 </body>
 </html>
