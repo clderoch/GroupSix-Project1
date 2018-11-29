@@ -49,7 +49,7 @@ function checkAge(url){
          * then the next line should be something like:
          * window.location.href='http://subdomain.mydomain.com.md/age.html?url='+encodeURIComponent(url);
          */
-        window.location.href='http://breweryheaven.com/index.html='+encodeURIComponent(url);
+        window.location.href= 'index.html='+encodeURIComponent(url);
     }
     return laChCookie;
 }
@@ -71,12 +71,12 @@ function setCookie(cname,cvalue,exdays,url){
      * document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/;domain=mydomain.com.md";
      */
     document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
-    domain="http://www.breweryheaven.com/index.html";
+    domain="index.html";
     if(!url){
         /**
          * CHANGE THIS VALUE
          */
-        url = "http://www.breweryheaven.com/index.html";
+        url = "index.html";
     }
     window.location.href=decodeURIComponent(url);
 }
