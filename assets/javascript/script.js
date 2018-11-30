@@ -1,5 +1,5 @@
-var clickSound = new Audio("./assets/sounds/beer.wav");
-var clickSound1 = new Audio("./assets/sounds/siren.wav");
+var clickSound = new Audio("../assets/sounds/beer.wav");
+var clickSound1 = new Audio("../assets/sounds/siren.wav");
 
 function searchBreweryFinder(brewery) {
 
