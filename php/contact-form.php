@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:500i" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
 
 </head>
 
@@ -115,11 +115,10 @@ if (isset($_POST["email"])) {
 <br>
 <footer class="page-footer font-small green">
 
-    <!-- Copyright -->
     <div class="footer-copyright text-center py-3" style="background-color:rgba(253,245,230,0.8);">© 2018 Copyright:
       <a href="https:breweryheaven.com/index.html" style="color:rgba(139,69,19,0.9)"> BreweryHeaven.com</a>
     </div>
-    <!-- Copyright -->
+
 </footer>
 
 </body>
