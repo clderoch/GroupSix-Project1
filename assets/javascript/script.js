@@ -31,7 +31,13 @@ function searchBreweryFinder(brewery) {
 
       var breweryName = $("<h1>").html("<a target='_blank' href=" + response[i].website_url + ">" + response[i].name + "</a>");
       var breweryURL = $("<a>").attr("href", response[i].website_url);
-      var breweryAddress = $("<h3>").text(response[i].street + " || " + response[i].postal_code + " || " + response[i].brewery_type);
+
+      if (!$.trim(response[i].street)) {
+        var breweryAddress = $("<h3>").text = "The street address was not provided."
+      }
+      else {
+        var breweryAddress = $("<h3>").text(response[i].street + " || " + response[i].postal_code);
+      }
 
       brewery.append(breweryName, breweryURL, breweryAddress);
       $("#brewerys").append(brewery);
